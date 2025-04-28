@@ -1,9 +1,6 @@
 package src.inventory;
 
 import src.products.Product;
-
-import java.awt.image.AreaAveragingScaleFilter;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Inventory<T extends Product> {
@@ -55,6 +52,7 @@ public class Inventory<T extends Product> {
     public void displayAll() {
         for ( T item : items) {
             System.out.println(item);
+            System.out.println();
         }
     }
 
